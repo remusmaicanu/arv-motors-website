@@ -1,0 +1,170 @@
+/* Basic Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #1d1d1f;
+    color: #f5f5f7;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #f5f5f7;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007aff;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(to right, #1d1d1f, #333);
+    color: #f5f5f7;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#hero .btn {
+    background-color: #007aff;
+    color: #f5f5f7;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+#hero .btn:hover {
+    background-color: #005bb5;
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1d1d1f;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+#contatti ul {
+    margin-top: 20px;
+}
+
+#contatti ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+#contatti ul li a {
+    color: #007aff;
+    transition: color 0.3s ease;
+}
+
+#contatti ul li a:hover {
+    color: #005bb5;
+}
+
+/* Footer */
+footer {
+    background-color: #1d1d1f;
+    color: #f5f5f7;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design for Phones */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Smaller font size for phones */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 10px;
+    }
+
+    #hero h2 {
+        font-size: 2rem; /* Smaller font size for phones */
+    }
+
+    #hero p {
+        font-size: 1rem; /* Smaller font size for phones */
+    }
+
+    section {
+        padding: 50px 0; /* Reduce padding for smaller screens */
+    }
+
+    section h2 {
+        font-size: 1.5rem; /* Smaller font size for phones */
+    }
+
+    section p {
+        font-size: 1rem; /* Smaller font size for phones */
+    }
+
+    #contatti ul li {
+        font-size: 1rem; /* Smaller font size for phones */
+    }
+}
