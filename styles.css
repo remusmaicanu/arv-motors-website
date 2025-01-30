@@ -214,11 +214,12 @@ footer p {
     position: relative;
 }
 
+/* Adjust Image Size in the Slider */
 .slide img {
     width: 100%;
     height: auto;
-    max-height: 500px; /* Adjust the max-height to control image size */
-    object-fit: cover; /* Ensure images fill the container without distortion */
+    max-height: 400px; /* Adjust this value as needed */
+    object-fit: cover; /* Ensures the image fills the container without distortion */
     border-radius: 10px;
 }
 
@@ -378,5 +379,106 @@ footer p {
 
     .step-content {
         text-align: center;
+    }
+}
+
+/* Car List Section */
+#car-list {
+    background-color: #f5f5f7;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#car-list h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #1d1d1f;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.car-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.car-details {
+    padding: 20px;
+}
+
+.car-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1d1d1f;
+}
+
+.car-details .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007aff;
+    margin-bottom: 10px;
+}
+
+.car-details .description {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.car-details .features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.car-details .features li {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+.car-details .btn {
+    display: inline-block;
+    background-color: #007aff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.car-details .btn:hover {
+    background-color: #005bb5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .car-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .car-card img {
+        height: 150px;
     }
 }
